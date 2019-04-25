@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Knockout example</title>
+    </head>
+    <body>
+        <div>
+            <h1>Contact</h1>
+            <p>First name: <input data-bind="value: firstName" /></p>
+            <p>Last name: <input data-bind="value: lastName" /></p>
+            <p>Last name: <span data-bind="text: fullName"></span></p>
+            
+        </div>
+ 
+        <script src="knockout-3.5.0.js"></script><!-- When the script file is added to the HTML document, a global variable ko is created and all exposed functions can be reached using this global Knockout variable-->
+        <script src="ContactForm.js"></script>
+    </body>
+</html>

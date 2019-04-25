@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ToDoList</title>
+</head>
+<div class='liveExample'> 
+    
+<form data-bind="submit: addTask">
+    New item:
+    <input data-bind='value: taskToAdd, valueUpdate: "afterkeydown"' />
+    <button type="submit" data-bind="enable: taskToAdd().length > 0">Add</button>
+    <p>Your items:</p>
+<select multiple="multiple" height="5" data-bind="options:tasks, selectedOptions:selectedItems"> </select>
+    
+</div>
+<script src="knockout-3.5.0.js"></script><!-- When the script file is added to the HTML document, a global variable ko is created and all exposed functions can be reached using this global Knockout variable-->
+<script src="todoList.js"></script>
+<script type="text/javascript" src="file2.js"></script>
+
+<script type="text/javascript" src="file1.js"></script>
+
+</body>
+</html>
